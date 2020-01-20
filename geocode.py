@@ -1,4 +1,4 @@
-"""Retrieve geocoordinates with OSM Nominatim API"""
+"""Retrieve geocoordinates with Google Geocoding"""
 
 import os
 import pandas as pd
