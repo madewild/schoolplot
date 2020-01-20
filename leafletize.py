@@ -28,11 +28,14 @@ header = """<html>
 output.write(header)
 
 df = pd.read_csv("data/coordinates.tsv", sep="\t")
+df2 = pd.read_csv("data/addresses.tsv", sep="\t")
 for i, school in enumerate(df["name"]):
     lat = df["lat"][i]
     lon = df["long"][i]
+    address = df2["address"][i]
+    address = address.replace(", Belgium", "")
     string = f'            L.marker([{lat}, {lon}]).addTo(mymap)\n'
-    string += f'                .bindPopup("{school}")\n'
+    string += f'                .bindPopup("<b>{school}</b><br/>{address}")\n'
     output.write(string)
 
 footer = """
