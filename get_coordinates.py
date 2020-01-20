@@ -11,7 +11,7 @@ output = open("data/coordinates.tsv", "w")
 header = "name\tlat\tlong\n"
 output.write(header)
 
-df = pd.read_csv("data/schools.tsv", sep="\t")
+df = pd.read_csv("data/addresses.tsv", sep="\t")
 for i, school in enumerate(df["name"]):
     address = df["address"][i]
     url = f"https://maps.googleapis.com/maps/api/geocode/json?address={school}, {address}&key={api_key}"

@@ -4,7 +4,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-output = open("data/schools.tsv", "w")
+output = open("data/addresses.tsv", "w")
 header = "name\taddress\n"
 output.write(header)
 
