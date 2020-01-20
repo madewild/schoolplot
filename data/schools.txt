@@ -1,30 +1,9 @@
-<html>
-    <head>
-        <title>Écoles</title>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin=""/>
-        <link rel="stylesheet" href="style.css"/>
-        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-   crossorigin=""></script>
-    </head>
-    <body>
-        <div id="mapid"></div>
-        <script>
-            var mymap = L.map('mapid').setView([50.4525, 3.945], 10);
-
-            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-                maxZoom: 18,
-                id: 'mapbox/streets-v11'
-            }).addTo(mymap);
-
             L.marker([50.4082097, 4.4498084]).addTo(mymap)
                 .bindPopup("ATHENEE ROYAL ERNEST SOLVAY")
             L.marker([50.411403799999995, 4.4470401]).addTo(mymap)
                 .bindPopup("ATHENEE ROYAL VAUBAN")
             L.marker([50.425124700000005, 4.4495871]).addTo(mymap)
-                .bindPopup("CENTRE EDUCATIF COMMUNAL SECONDAIRE LA GARENNE")
+                .bindPopup("CENTRE EDUCATIF COMMUNAL SECONDAIRE "LA GARENNE"")
             L.marker([50.4085149, 4.4469001]).addTo(mymap)
                 .bindPopup("CENTRE SCOLAIRE DU SACRE-COEUR")
             L.marker([50.4207399, 4.4594054000000005]).addTo(mymap)
@@ -305,7 +284,3 @@
                 .bindPopup("ATHENEE ROYAL LUCIENNE TELLIER")
             L.marker([50.59459039999999, 3.8521271]).addTo(mymap)
                 .bindPopup("La Maison des Phénix - Ecole secondaire")
-
-        </script>
-    </body>
-</html>

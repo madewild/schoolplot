@@ -4,7 +4,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-output = open("schools.tsv", "w")
+output = open("data/schools.tsv", "w")
 header = "name\taddress\n"
 output.write(header)
 
@@ -16,6 +16,7 @@ schools = html_table.tbody.find_all("tr")
 for school in schools:
     fields = [td.text for td in school.find_all("td")]
     name = fields[0].strip()
+    name = name.replace('"', '')
     street = fields[1].strip()
     street = re.sub(r'\s+', " ", street)
     street = street.replace(" , ", " ")

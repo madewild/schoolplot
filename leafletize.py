@@ -2,8 +2,8 @@
 
 import pandas as pd
 
-output = open("schools.txt", "w")
-df = pd.read_csv("coordinates.tsv", sep="\t")
+output = open("data/schools.txt", "w")
+df = pd.read_csv("data/coordinates.tsv", sep="\t")
 for i, school in enumerate(df["name"]):
     lat = df["lat"][i]
     lon = df["long"][i]
