@@ -49,13 +49,12 @@ header = """<html>
 
                 var div = L.DomUtil.create('div', 'info legend'),
                     grades = ["Fondamental", "Secondaire", "Spécialisé"],
-                    colors = ["red", "blue", "green"];
-                    numbers = [210, 49]
+                    colors = ["red", "blue", "green"],
+                    numbers = [210, 49, 35];
 
-                // loop through our density intervals and generate a label with a colored square for each interval
                 for (var i = 0; i < grades.length; i++) {
                     div.innerHTML +=
-                        '<img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-' + colors[i] + '.png"> ' + grades[i] + '<br/>';
+                        '<img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-' + colors[i] + '.png"> ' + grades[i] + ' (' + numbers[i] + ' écoles)<br/>';
                 }
 
                 return div;
