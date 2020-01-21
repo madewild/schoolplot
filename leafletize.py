@@ -3,7 +3,7 @@
 import sys
 import pandas as pd
 
-degrees = ["fond", "sec", "matspe", "prispe", "secspe"]
+degrees = ["fond", "sec", "fondspe", "secspe"]
 
 output = open("schools.html", "w")
 header = """<html>
@@ -50,6 +50,7 @@ header = """<html>
                 var div = L.DomUtil.create('div', 'info legend'),
                     grades = ["Fondamental", "Secondaire", "Spécialisé"],
                     colors = ["red", "blue", "green"];
+                    numbers = [210, 49]
 
                 // loop through our density intervals and generate a label with a colored square for each interval
                 for (var i = 0; i < grades.length; i++) {

@@ -16,10 +16,8 @@ if degree == "fond":
     url = urls["fondamental ordinaire"]
 elif degree == "sec":
     url = urls["secondaire ordinaire"]
-elif degree == "matspe":
-    url = urls["maternel spécialisé"]
-elif degree == "prispe":
-    url = urls["primaire spécialisé"]
+elif degree == "fondspe":
+    url = urls["fondamental spécialisé"]
 elif degree == "secspe":
     url = urls["secondaire spécialisé"]
 else:
