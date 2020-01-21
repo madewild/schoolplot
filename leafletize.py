@@ -1,8 +1,11 @@
 """Convert TSV data to Leaflet format"""
 
+import sys
 import pandas as pd
 
-output = open("schools.html", "w")
+degree = sys.argv[1]
+
+output = open("index.html", "w")
 header = """<html>
     <head>
         <title>Écoles</title>
@@ -27,8 +30,8 @@ header = """<html>
 """
 output.write(header)
 
-df = pd.read_csv("data/coordinates.tsv", sep="\t")
-df2 = pd.read_csv("data/addresses.tsv", sep="\t")
+df = pd.read_csv(f"data/{degree}_coordinates.tsv", sep="\t")
+df2 = pd.read_csv(f"data/{degree}_addresses.tsv", sep="\t")
 for i, school in enumerate(df["name"]):
     lat = df["lat"][i]
     lon = df["long"][i]

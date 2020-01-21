@@ -1,17 +1,20 @@
 """Retrieve geocoordinates with Google Geocoding"""
 
 import os
+import sys
 import pandas as pd
 import requests
 import json
 
+degree = sys.argv[1]
+
 api_key = os.getenv("GCLOUD_API_KEY")
 
-output = open("data/coordinates.tsv", "w")
+output = open(f"data/{degree}_coordinates.tsv", "w")
 header = "name\tlat\tlong\n"
 output.write(header)
 
-df = pd.read_csv("data/addresses.tsv", sep="\t")
+df = pd.read_csv(f"data/{degree}_addresses.tsv", sep="\t")
 for i, school in enumerate(df["name"]):
     address = df["address"][i]
     url = f"https://maps.googleapis.com/maps/api/geocode/json?address={school}, {address}&key={api_key}"

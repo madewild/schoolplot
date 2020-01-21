@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Écoles</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+    </head>
+    <body>
+        <div id="mapid"></div>
+        <script>
+            var mymap = L.map('mapid').setView([50.4525, 3.945], 13);
+
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+                maxZoom: 18,
+                id: 'mapbox/streets-v11'
+            }).addTo(mymap);
+
+            L.marker([50.4483184, 3.9448279000000004]).addTo(mymap)
+                .bindPopup("<b>Ecole communale fondamentale</b><br/>Rue des Canonniers 3/Z, 7000 MONS")
+            L.marker([50.4500651, 3.9450852999999997]).addTo(mymap)
+                .bindPopup("<b>Ecole communale fondamentale</b><br/>Rue des Arquebusiers 3, 7000 MONS")
+            L.marker([50.4500651, 3.9450852999999997]).addTo(mymap)
+                .bindPopup("<b>Ecole communale fondamentale</b><br/>Rue Achille Legrand 12, 7000 MONS")
+            L.marker([50.458463099999996, 3.953959799999999]).addTo(mymap)
+                .bindPopup("<b>Ecole communale fondamentale</b><br/>Rue du Rossignol 12, 7000 MONS")
+            L.marker([50.44046289999999, 3.9450772000000005]).addTo(mymap)
+                .bindPopup("<b>Ecole communale fondamentale du Trieu</b><br/>Avenue du Général de Gaulle 154, 7000 MONS")
+            L.marker([50.46131870000001, 3.9559955]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale annexée Marguerite Bervoets Mons</b><br/>Avenue Victor Maistriau 11, 7000 MONS")
+            L.marker([50.4531867, 3.9454674]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale annexée Mons 1</b><br/>Rue Fétis 11, 7000 MONS")
+            L.marker([50.4566297, 3.9497888]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale du Sacré-C?ur</b><br/>Rue des Compagnons 10, 7000 MONS")
+            L.marker([50.458481, 3.9638491]).addTo(mymap)
+                .bindPopup("<b>Ecole maternelle Saint-François des Ursulines</b><br/>Rue Valenciennoise 1A, 7000 MONS")
+            L.marker([50.454020899999996, 3.9503922]).addTo(mymap)
+                .bindPopup("<b>Ecole maternelle Saint-Joseph</b><br/>Rue des Gades 2, 7000 MONS")
+            L.marker([50.4438828, 3.9519106]).addTo(mymap)
+                .bindPopup("<b>Ecole maternelle libre Notre-Dame de Messines</b><br/>Rue de Joncquois 118 A, 7000 MONS")
+            L.marker([50.4566297, 3.9497888]).addTo(mymap)
+                .bindPopup("<b>Ecole primaire du Sacré-Coeur</b><br/>Rue des Dominicains 9, 7000 MONS")
+            L.marker([50.4535251, 3.9491921000000003]).addTo(mymap)
+                .bindPopup("<b>Ecole primaire libre - Externat Saint-Joseph</b><br/>Rue des Clercs 34, 7000 MONS")
+            L.marker([50.4442245, 3.9475407]).addTo(mymap)
+                .bindPopup("<b>Ecole primaire libre Notre-Dame de Messines</b><br/>Avenue du Général de Gaulle 45A, 7000 MONS")
+            L.marker([50.45891109999999, 3.9627815]).addTo(mymap)
+                .bindPopup("<b>Ecole primaire libre Sainte-Angèle des Ursulines</b><br/>Rue Valenciennoise 1C, 7000 MONS")
+            L.marker([50.4580838, 3.9638410000000004]).addTo(mymap)
+                .bindPopup("<b>Ecole primaire libre Sainte-Elisabeth des Ursulines</b><br/>Rue Valenciennoise 1B, 7000 MONS")
+            L.marker([59.913868799999996, 10.7522454]).addTo(mymap)
+                .bindPopup("<b>Ecole Primaire Shape de la Communauté Française</b><br/>Avenue d'Oslo 714, 7010 SHAPE")
+            L.marker([54.6871555, 25.2796514]).addTo(mymap)
+                .bindPopup("<b>Ecole maternelle - Jardin d'Enfants Shape</b><br/>Avenue de Vilnius 708, 7010 SHAPE")
+            L.marker([50.474205700000006, 3.9029684999999996]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale libre Saint-Louis</b><br/>Rue de Mons 4, 7011 GHLIN")
+            L.marker([50.475669700000005, 3.9051336]).addTo(mymap)
+                .bindPopup("<b>Groupe scolaire Barigand - Saint-Denis</b><br/>Sentier du Vicaire 1, 7011 GHLIN")
+            L.marker([50.433248999999996, 3.8904913999999997]).addTo(mymap)
+                .bindPopup("<b>Ecole communale fondamentale Robert André</b><br/>Place A. Dooms 6, 7012 FLENU")
+            L.marker([50.4454833, 3.896698499999999]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale communale Henri Pohl</b><br/>Rue du Couvent 1, 7012 JEMAPPES")
+            L.marker([50.44874429999999, 3.8877924]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale libre - Institut Notre-Dame</b><br/>Rue du Docteur Liénard 4, 7012 JEMAPPES")
+            L.marker([50.446717299999996, 3.8843165999999996]).addTo(mymap)
+                .bindPopup("<b>Institut Saint-Ferdinand - Ecole fondamentale de Jemappes - Cycle 2,5-8</b><br/>Avenue du Coq 10, 7012 JEMAPPES")
+            L.marker([50.4468636, 3.8833412000000003]).addTo(mymap)
+                .bindPopup("<b>Institut Saint-Ferdinand - Ecole primaire de Jemappes</b><br/>Rue Croisette 2, 7012 JEMAPPES")
+            L.marker([50.43670729999999, 3.8884198]).addTo(mymap)
+                .bindPopup("<b>Institut Saint-Ferdinand - Section fondamentale de Flenu</b><br/>Avenue Champ de Bataille 386, 7012 JEMAPPES")
+            L.marker([50.48642299999999, 3.9585725]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale communale</b><br/>Avenue des Espinois 77, 7020 MAISIERES")
+            L.marker([50.4760516, 3.9567902000000004]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale libre Saint-Louis</b><br/>Rue Franche 22, 7020 NIMY")
+            L.marker([50.461687899999994, 4.0462047]).addTo(mymap)
+                .bindPopup("<b>Ecole communale Centre</b><br/>Rue Victor Baudour 42, 7021 HAVRE")
+            L.marker([50.472536700000006, 4.0129801999999986]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale libre Saint-Joseph</b><br/>Rue du Château 2, 7021 HAVRE")
+            L.marker([50.40466079999999, 4.0180715]).addTo(mymap)
+                .bindPopup("<b>Ecole communale fondamentale d'Harmignies</b><br/>Chaussée de Beaumont 501, 7022 HARMIGNIES")
+            L.marker([50.440081899999996, 3.9603184999999996]).addTo(mymap)
+                .bindPopup("<b>Ecole communale fondamentale d'Hyon</b><br/>Rue Louis Piérard 1, 7022 HYON")
+            L.marker([50.4379886, 3.9599051]).addTo(mymap)
+                .bindPopup("<b>Ecole primaire libre Saint-Joseph de Hyon</b><br/>Rue des Canadiens 16B, 7022 HYON")
+            L.marker([50.4383384, 4.0077446000000005]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale communale</b><br/>Rue François Marcq 4, 7030 SAINT-SYMPHORIEN")
+            L.marker([50.437907700000004, 4.0073893]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale libre</b><br/>Place de Saint-Symphorien 7, 7030 SAINT-SYMPHORIEN")
+            L.marker([50.43677329999999, 3.9226438999999997]).addTo(mymap)
+                .bindPopup("<b>Ecole communale du Centre</b><br/>Rue Ferrer 1, 7033 CUESMES")
+            L.marker([50.43807200000001, 3.9241357000000003]).addTo(mymap)
+                .bindPopup("<b>Institut Saint-Ferdinand - Section fondamentale de Cuesmes</b><br/>Rue de l'Etang Derbaix 2B, 7033 CUESMES")
+            L.marker([50.475427200000006, 4.011146]).addTo(mymap)
+                .bindPopup("<b>Ecole fondamentale communale du Centre</b><br/>Rue des Ecoles 52-54, 7034 OBOURG")
+
+        </script>
+    </body>
+</html>
