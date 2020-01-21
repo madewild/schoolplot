@@ -3,7 +3,7 @@
 import sys
 import pandas as pd
 
-degrees = ["prim", "sec"]
+degrees = ["fond", "sec"]
 
 output = open("index.html", "w")
 header = """<html>
@@ -20,7 +20,7 @@ header = """<html>
     <body>
         <div id="mapid"></div>
         <script>
-            var mymap = L.map('mapid').setView([50.4525, 3.945], 13);
+            var mymap = L.map('mapid').setView([50.5, 4], 11);
             var redIcon = new L.Icon({
                 iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
                 shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -46,7 +46,7 @@ for degree in degrees:
         lon = df["long"][i]
         address = df2["address"][i]
         address = address.replace(", Belgium", "")
-        if degree == "prim":
+        if degree == "fond":
             string = f'            L.marker([{lat}, {lon}]'
             string += ', {icon: redIcon}).addTo(mymap)\n'
         else:

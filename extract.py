@@ -5,11 +5,17 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
+url_file = open("urls.csv").readlines()
+urls = {}
+for line in url_file:
+    domain, url = line.strip().split(",")
+    urls[domain] = url
+
 degree = sys.argv[1]
-if degree == "prim":
-    num = 2
+if degree == "fond":
+    url = urls["fondamental ordinaire"]
 elif degree == "sec":
-    num = 3
+    url = urls["secondaire ordinaire"]
 else:
     print("Unknown degree")
     sys.exit()
@@ -18,7 +24,6 @@ output = open(f"data/{degree}_addresses.tsv", "w")
 header = "name\taddress\n"
 output.write(header)
 
-url = f"http://www.enseignement.be/index.php?page=2593{num}&act=search&check=&unite=&geo_type=1&geo_prov=5&geo_cp=&geo_loca=&geo_mots=&reseau=111%2C126%2C123%2C122%2C121%2C131%2C132&opt_degre=&opt_tyen=&opt_domaine=0&opt_mots=&opt_groupe=11&opt_option="
 html = requests.get(url).text
 soup = BeautifulSoup(html, "lxml")
 html_table = soup.find("table", attrs={"class": "tbl_lll tbl_listing"})
