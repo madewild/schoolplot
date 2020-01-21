@@ -17,7 +17,7 @@ output.write(header)
 df = pd.read_csv(f"data/{degree}_addresses.tsv", sep="\t")
 for i, school in enumerate(df["name"]):
     address = df["address"][i]
-    url = f"https://maps.googleapis.com/maps/api/geocode/json?address={school}, {address}&key={api_key}"
+    url = f"https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={api_key}"
     r = requests.get(url)
     json_code = json.loads(r.content)["results"]
     if json_code:
