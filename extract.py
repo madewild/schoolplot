@@ -36,6 +36,6 @@ for school in schools:
     city = fields[3].strip()
     address = f"{street}, {cp} {city}, Belgium"
     output_string = f"{name}\t{address}\n"
-    if cp.startswith("6") or cp.startswith("7"):
+    if int(cp) in range(7000,7400):
         output.write(output_string)
 output.close()
