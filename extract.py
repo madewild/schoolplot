@@ -16,8 +16,14 @@ if degree == "fond":
     url = urls["fondamental ordinaire"]
 elif degree == "sec":
     url = urls["secondaire ordinaire"]
+elif degree == "matspe":
+    url = urls["maternel spécialisé"]
+elif degree == "prispe":
+    url = urls["primaire spécialisé"]
+elif degree == "secspe":
+    url = urls["secondaire spécialisé"]
 else:
-    print("Specialised is not handled yet")
+    print("Unknown degree")
     sys.exit()
 
 output = open(f"data/{degree}_addresses.tsv", "w")
@@ -26,13 +32,23 @@ output.write(header)
 
 html = requests.get(url).text
 soup = BeautifulSoup(html, "lxml")
-html_table = soup.find("table", attrs={"class": "tbl_lll tbl_listing"})
+if "spe" in degree:
+    html_table = soup.find("table", attrs={"class": "classic"})
+else:
+    html_table = soup.find("table", attrs={"class": "tbl_lll tbl_listing"})
 schools = html_table.tbody.find_all("tr")
 for school in schools:
     fields = [td.text for td in school.find_all("td")]
-    name = fields[0].strip()
+    string_fields = [str(td) for td in school.find_all("td")]
+    if "spe" in degree:
+        name_street = string_fields[1].strip()
+        name, rest = name_street.split("<br/>")
+        rest = re.sub(r"<.*?>", "", rest)
+        street = rest.split("(")[0].strip()
+    else:
+        name = fields[0].strip()
+        street = fields[1].strip()
     name = name.replace('"', '')
-    street = fields[1].strip()
     street = re.sub(r'\s+', " ", street)
     street = street.replace(" , ", " ")
     street = street.replace("Bld", "Boulevard")

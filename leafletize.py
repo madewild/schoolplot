@@ -3,7 +3,7 @@
 import sys
 import pandas as pd
 
-degrees = ["fond", "sec"]
+degrees = ["fond", "sec", "matspe", "prispe", "secspe"]
 
 output = open("index.html", "w")
 header = """<html>
@@ -29,11 +29,39 @@ header = """<html>
                 popupAnchor: [1, -34],
                 shadowSize: [41, 41]
             });
+            var greenIcon = new L.Icon({
+                iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
 
             L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
                 maxZoom: 18,
                 id: 'mapbox/streets-v11'
             }).addTo(mymap);
+
+            var legend = L.control({position: 'bottomright'});
+
+            legend.onAdd = function (map) {
+
+                var div = L.DomUtil.create('div', 'info legend'),
+                    grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+                    labels = [];
+
+                // loop through our density intervals and generate a label with a colored square for each interval
+                for (var i = 0; i < grades.length; i++) {
+                    div.innerHTML +=
+                        '<i>Test</i> ' +
+                        grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+                }
+
+                return div;
+            };
+
+            legend.addTo(mymap);
 
 """
 output.write(header)
@@ -49,6 +77,9 @@ for degree in degrees:
         if degree == "fond":
             string = f'            L.marker([{lat}, {lon}]'
             string += ', {icon: redIcon}).addTo(mymap)\n'
+        elif "spe" in degree:
+            string = f'            L.marker([{lat}, {lon}]'
+            string += ', {icon: greenIcon}).addTo(mymap)\n'
         else:
             string = f'            L.marker([{lat}, {lon}]).addTo(mymap)\n'
         string += f'                .bindPopup("<b>{school}</b><br/>{address}")\n'
