@@ -43,6 +43,7 @@ for school in schools:
     if "spe" in degree:
         name_street = string_fields[1].strip()
         name, rest = name_street.split("<br/>")
+        name = re.sub(r"<.*?>", "", name)
         rest = re.sub(r"<.*?>", "", rest)
         street = rest.split("(")[0].strip()
     else:
