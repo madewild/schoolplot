@@ -5,7 +5,7 @@ import pandas as pd
 
 degrees = ["fond", "sec", "matspe", "prispe", "secspe"]
 
-output = open("index.html", "w")
+output = open("schools.html", "w")
 header = """<html>
     <head>
         <title>Écoles</title>
