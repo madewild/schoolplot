@@ -15,8 +15,8 @@ Ecole primaire libre - Externat Saint-Joseph	50.4535251	3.9491921
 Ecole primaire libre Notre-Dame de Messines	50.44423519999999	3.9474752
 Ecole primaire libre Sainte-Angèle des Ursulines	50.4580279	3.9621564
 Ecole primaire libre Sainte-Elisabeth des Ursulines	50.4580279	3.9621564
-Ecole Primaire Shape de la Communauté Française	59.9138688	10.7522454
-Ecole maternelle - Jardin d'Enfants Shape	54.6871555	25.2796514
+Ecole Primaire Shape de la Communauté Française	50.4999349	3.978474
+Ecole maternelle - Jardin d'Enfants Shape	50.4999349	3.978474
 Ecole fondamentale libre Saint-Louis	50.4742513	3.9028236
 Groupe scolaire Barigand - Saint-Denis	50.4756697	3.9051336
 Ecole communale fondamentale Robert André	50.4329954	3.8895057
@@ -52,7 +52,7 @@ Ecole fondamentale annexée Jules Bordet - Soignies	50.5809276	4.0695087
 Ecole fondamentale libre	50.56962739999999	4.0799536
 Ecole fondamentale libre Saint-Vincent	50.580989	4.073208999999999
 Ecole fondamentale libre Saint-Vincent	50.5791182	4.072780799999999
-Ecole fondamentale communale	50.5148292	4.048816299999999
+Ecole fondamentale communale	50.5121067	4.047065799999999
 Ecole fondamentale communale	50.5538833	4.1001578
 Ecole fondamentale libre Saint-Joseph	50.5530823	4.098294099999999
 Ecole communale fondamentale Casteau-Neufvilles-Chaussée	50.5665468	3.9987397
@@ -63,9 +63,9 @@ Ecole fondamentale paroissiale Saint-Joseph	50.47356869999999	4.086298
 Ecole communale fondamentale du Roeulx	50.4754262	4.0687186
 Groupe scolaire fondamental communal d'Eugies-Sars	50.3913943	3.871064099999999
 Ecole fondamentale libre - Institut Saint-Joseph	50.4117134	3.8981663
-Ecole fondamentale libre Sainte-Waudru	50.39498469999999	3.9006145
+Ecole fondamentale libre Sainte-Waudru	50.4118192	3.891778999999999
 Groupe scolaire communal de Calmette	50.40244879999999	3.8976433
-Groupe scolaire communal de La Victoire	50.832323	4.346017300000001
+Groupe scolaire communal de La Victoire	50.4098264	3.9005967
 Ecole fondamentale Sainte Marie	50.4051389	3.873975199999999
 Groupe scolaire communal de La Libération	50.4057858	3.8745495
 Ecole fondamentale annexée Braine-le-Comte	50.6072632	4.1332716
@@ -98,7 +98,7 @@ Ecole fondamentale communale	50.4470219	4.1461835
 Ecole fondamentale communale	50.485055	4.1460383
 Ecoles fondamentales libres Houdeng-Aimeries - Bois-du-Luc	50.48341019999999	4.1497443
 Ecole fondamentale communale	50.4822189	4.157449199999999
-Ecole fondamentale libre Saint-Donat	50.48444	4.15496
+Ecole fondamentale libre Saint-Donat	50.4842896	4.154728299999999
 Ecole maternelle communale autonome	50.49538769999999	4.1509218
 Ecole fondamentale communale du Centre	50.48787530000001	4.155309100000001
 Ecole fondamentale libre	50.4602541	4.0985995
@@ -118,7 +118,7 @@ Ecole communale fondamentale Binche VI	50.41860699999999	4.220178
 Ecole fondamentale libre Leval-Trahegnies	50.4252007	4.2231779
 Ecole communale fondamentale Binche I	50.4368293	4.149693500000001
 Ecole communale fondamentale Binche II	50.4333101	4.182646099999999
-Ecole communale fondamentale Binche V	50.415952	4.1907292
+Ecole communale fondamentale Binche V	50.4159314	4.1908233
 Ecole fondamentale libre	50.43076629999999	4.1940928
 Ecole fondamentale libre de l'Enfant Jésus	50.4546798	4.2450787
 Ecole fondamentale provinciale d'application	50.4589959	4.2471295
@@ -126,7 +126,7 @@ Ecole primaire communale	50.4534195	4.2395324
 Ecole communale des Trieux	50.45019569999999	4.2618379
 Ecole communale du Centre	50.44361259999999	4.254078499999999
 Ecole fondamentale libre Sainte-Thérèse et Saint-Joseph	50.4427306	4.2545717
-Ecole fondamentale communale	50.4396193	4.298119199999999
+Ecole fondamentale communale	50.43959	4.2986464
 Ecole fondamentale communale	50.47262	4.276975999999999
 Ecole fondamentale communale	50.4667676	4.2845764
 Ecole fondamentale libre Moi de Chapelle-lez-Herlaimont	50.4724777	4.2878739
@@ -149,7 +149,7 @@ Ecole fondamentale communale de Marche	50.548399	4.1811414
 Ecole communale fondamentale Odenat Bouton	50.5722099	4.1737594
 Ecole fondamentale communale Ecole du Sud	50.5625289	4.1530809
 Ecole fondamentale libre Sacré-Coeur - Saint-Géry	50.56195959999999	4.149867299999999
-Ecole fondamentale libre Saint-Rémy	48.8439911	2.2885637
+Ecole fondamentale libre Saint-Rémy	50.57221939999999	4.1756666
 Ecole fondamentale communale de L'Alliance	50.412709	3.796369
 Ecole fondamentale communale du Centre-Boussu	50.4326439	3.7949582
 Ecole fondamentale communale du Foyer moderne	50.4257947	3.7991392
@@ -158,7 +158,7 @@ Ecole fondamentale libre Saint-Charles	50.41149170000001	3.7805881
 Ecole fondamentale libre Saint-Géry	50.43478200000001	3.794618
 Ecole fondamentale communale de La Chapelle	50.428734	3.830883399999999
 Ecole fondamentale communale du Centre - Hornu	50.4338381	3.829207499999999
-Ecole fondamentale communale du Grand Hornu	50.43951999999999	3.841345
+Ecole fondamentale communale du Grand Hornu	50.43802820000001	3.834248
 Ecole fondamentale communale de Bernissart-Harchies	50.47569439999999	3.6490396
 Ecole fondamentale communale	50.4999335	3.6579728
 Ecole fondamentale libre subventionnée	50.5025531	3.6609493
@@ -174,14 +174,14 @@ Groupe scolaire communal de Baudour	50.480847	3.8349231
 Ecole fondamentale libre Saint-Amand	50.50667379999999	3.78609
 Groupe scolaire communal de Sirault	50.5063906	3.7837669
 Ecole fondamentale libre Saint-Joseph	50.469386	3.8145609
-Ecole fondamentale libre du Sacré-Coeur	50.8603505	4.33154
+Ecole fondamentale libre du Sacré-Coeur	50.4668162	3.8118542
 Groupe scolaire communal fondamental de Tertre	50.466871	3.7994577
 Ecole fondamentale libre - Institut Saint-François d'Assise	50.4827694	3.7637482
 Ecole communale A. Libiez - Quesnoy Groupe scolaire n°5	50.3951703	3.8650642
 Centre scolaire Saint-Michel de PATURAGES	50.4114448	3.8638118
 Ecole communale Arthur Nazé-Alfred Busieau Groupe scolaire n°2	50.4020541	3.8536407
 Ecole communale Cambry - Achille Delattre Abbaye Groupe scolaire n°3	50.4215951	3.8396677
-Ecole communale Genin A Dieu Groupe scolaire n°4	50.40367939999999	3.8427402
+Ecole communale Genin A Dieu Groupe scolaire n°4	50.4818722	3.8983775
 Ecole communale Rampe Anfouette - Baille Cariotte - Groupe scolaire n°1	50.4015655	3.840989
 Ecole fondamentale libre Les Cèdres	50.4034057	3.8341762
 Ecole fondamentale libre Saint-François	50.4072399	3.8413624
@@ -200,7 +200,7 @@ Ecole communale de Baisieux	50.3881984	3.696142
 Ecole communale fondamentale	50.408153	3.6844299
 Ecole fondamentale libre Saint-Jean Bosco	50.40784009999999	3.6800633
 La Ribambelle - Ecole fondamentale libre du Centre scolaire Don Bosco	50.4071866	3.6828613
-Ecole communale fondamentale La Petite Honnelle	50.3606946	3.733406699999999
+Ecole communale fondamentale La Petite Honnelle	50.3581	3.77132
 Ecole communale Emile Verhaeren	50.33259899999999	3.6929964
 Ecole communale - Groupe scolaire 2	50.4513474	3.8560213
 Ecole communale - Groupe scolaire 3	50.428141	3.853034

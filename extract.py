@@ -35,6 +35,8 @@ for school in schools:
     cp = fields[2].strip()
     city = fields[3].strip()
     address = f"{street}, {cp} {city}, Belgium"
+    if "SHAPE" in address:
+        address = "SHAPE, Mons, Belgium"
     output_string = f"{name}\t{address}\n"
     if int(cp) in range(7000,7400):
         output.write(output_string)
