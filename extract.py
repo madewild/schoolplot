@@ -17,7 +17,7 @@ if degree == "fond":
 elif degree == "sec":
     url = urls["secondaire ordinaire"]
 else:
-    print("Unknown degree")
+    print("Specialised is not handled yet")
     sys.exit()
 
 output = open(f"data/{degree}_addresses.tsv", "w")
