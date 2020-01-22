@@ -50,7 +50,7 @@ header = """<html>
                 var div = L.DomUtil.create('div', 'info legend'),
                     grades = ["Fondamental", "Secondaire", "Spécialisé"],
                     colors = ["red", "blue", "green"],
-                    numbers = [210, 49, 25];
+                    numbers = [206, 49, 25];
 
                 for (var i = 0; i < grades.length; i++) {
                     div.innerHTML +=
